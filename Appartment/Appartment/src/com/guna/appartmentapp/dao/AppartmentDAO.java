@@ -20,7 +20,7 @@ public class AppartmentDAO {
 			pst.setLong(5, appartment.getEmployee().getId());
 			pst.setLong(6, appartment.getTenent().getId());
 			int row = pst.executeUpdate();
-			System.out.println(row);
+			System.out.println("Inserted Row" + row);
 		}
 
 		catch (Exception e) {
@@ -43,7 +43,7 @@ public class AppartmentDAO {
 			pst.setLong(6, appartment.getOwner().getId());
 			pst.setLong(7, appartment.getId());
 			int row = pst.executeUpdate();
-			System.out.println(row);
+			System.out.println("Updated Row "+row);
 		}
 
 		catch (Exception e) {
@@ -59,7 +59,7 @@ public class AppartmentDAO {
 			PreparedStatement pst = con.prepareStatement("Delete from appartment where id=?");
 			pst.setLong(1, appartment.getId());
 			int row = pst.executeUpdate();
-			System.out.println(row);
+			System.out.println("Deleted Row " +row);
 
 		}
 

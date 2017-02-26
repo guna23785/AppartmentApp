@@ -15,7 +15,7 @@ public class TestAppartmentService {
 
 		{
 // insert //
-			/*Owner owner = new Owner();
+			Owner owner = new Owner();
 			owner.setId(1l);
 
 			Employee employee = new Employee();
@@ -33,11 +33,11 @@ public class TestAppartmentService {
 			appartment.setTenent(tenent);
 
 			AppartmentService service = new AppartmentService();
-			service.SaveService(appartment);*/
+			service.SaveService(appartment);
 		}
 
 		{
-/*// update //
+// update //
 			Owner owner = new Owner();
 			owner.setId(2l);
 
@@ -59,7 +59,7 @@ public class TestAppartmentService {
 			AppartmentService service = new AppartmentService();
 			service.UpdateService(appartment);
 		}
-*/
+
 		{
 // delete //
 
@@ -71,6 +71,6 @@ public class TestAppartmentService {
 
 		}
 	}
-}
+
 
 
